@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">Will You Be My Valentine? 💝</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Floating Background Elements -->
+        <div class="background-container"></div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <h1 class="title" id="title">Will You Be My Valentine?</h1>
+            
+            <!-- Question 1 -->
+            <div class="question" id="question1">
+                <p class="question-text" id="q1Text">Do you like me?</p>
+                <div class="button-container">
+                    <button class="btn yes-btn" id="q1Yes">Yes</button>
+                    <button class="btn no-btn" id="q1No">No</button>
+                </div>
+                <p class="secret-answer" id="secretAnswer"></p>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question hidden" id="question2">
+                <p class="question-text" id="q2Text">How much do you love me?</p>
+                <input type="range" id="loveSlider" min="0" max="10000" value="100" class="slider">
+                <p class="love-percentage"><span id="percentage">100</span>%</p>
+                <p class="love-message" id="loveMessage">And beyond! 🥰</p>
+                <button class="btn next-btn" id="q2Next">Next ❤️</button>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question hidden" id="question3">
+                <p class="question-text" id="q3Text">Will you be my Valentine...?</p>
+                <div class="button-container">
+                    <button class="btn yes-btn" id="q3Yes">Yes!</button>
+                    <button class="btn no-btn" id="q3No">No</button>
+                </div>
+            </div>
+
+            <!-- Celebration -->
+            <div class="celebration hidden" id="celebration">
+                <h2 class="celebration-title" id="celebrationTitle">Yay! I'm the luckiest person...</h2>
+                <p class="celebration-message" id="celebrationMessage">Now come get your gift...</p>
+                <p class="celebration-emojis" id="celebrationEmojis">🎁💖🤗💝💋❤️💕</p>
+            </div>
+
+            <!-- Music Control -->
+            <button class="music-btn" id="musicBtn">🎵 Play Music</button>
+            <audio id="audioPlayer"></audio>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
